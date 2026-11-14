@@ -1,0 +1,98 @@
+using UnityEngine;
+
+namespace UnityGameStarter.Math.TransformStatics
+{
+    public enum VectorParam { X, Y, Z }
+
+    public static class VectorLibrary
+    {
+        public static float GetVector3Param(Vector3 target, VectorParam param) 
+        {
+            return param switch
+            {
+                VectorParam.X => target.x,
+                VectorParam.Y => target.y,
+                VectorParam.Z => target.z,
+                _=> target.x
+            };
+        }
+        
+        public static void SetVector3Param(ref Vector3 target, VectorParam param, float value) 
+        {
+            switch (param) 
+            {
+                case VectorParam.X:
+                    target.x = value;
+                    break;
+
+                case VectorParam.Y:
+                    target.y = value;
+                    break;
+
+                case VectorParam.Z:
+                    target.z = value;
+                    break;
+
+                default:
+                    target.x = value;
+                    break;
+            }
+        }
+
+        public static void AddVector3Param(ref Vector3 target, VectorParam param, float value)
+        {
+            switch (param)
+            {
+                case VectorParam.X:
+                    target.x += value;
+                    break;
+
+                case VectorParam.Y:
+                    target.y += value;
+                    break;
+
+                case VectorParam.Z:
+                    target.z += value;
+                    break;
+
+                default:
+                    target.x += value;
+                    break;
+            }
+        }
+
+        public static Vector3 ToVector3(this Vector2 vector, float z = 0)
+            => new(vector.x, vector.y, z);
+
+        public static Vector2 XZToVector2(this Vector3 vector)
+            => new(vector.x, vector.z);
+
+        public static Vector3 ToVector3XZ(this Vector2 vector, float y = 0)
+            => new(vector.x, y, vector.y);
+
+        public static Vector2Int ToVector2Int(this Vector2 vector, 
+            IntConversionMode mode = IntConversionMode.Floor, HalfToIntMode him = HalfToIntMode.Default) 
+        {
+            int x = vector.x.IntConversion(him, mode);
+            int y = vector.y.IntConversion(him, mode);
+
+            return new(x, y);
+        }
+
+        public static Vector3Int ToVector3Int(this Vector3 vector, 
+            IntConversionMode mode = IntConversionMode.Floor, HalfToIntMode him = HalfToIntMode.Default) 
+        {
+            int x = vector.x.IntConversion(him, mode);
+            int y = vector.y.IntConversion(him, mode);
+            int z = vector.z.IntConversion(him, mode);
+
+            return new(x, y, z);
+        }
+
+        public static Vector2 OffsetComponents(this Vector2 vector, float value)
+            => new (vector.x + value, vector.y + value);
+
+        public static Vector3 OffsetComponents(this Vector3 vector, float value)
+            => new (vector.x + value, vector.y + value, vector.z + value);
+    }
+}

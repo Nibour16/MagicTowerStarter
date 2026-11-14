@@ -1,0 +1,81 @@
+using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityGameStarter.CommonData;
+using UnityGameStarter.Events;
+using UnityGameStarter.SceneManagement;
+using UnityGameStarter.SingletonPattern;
+
+namespace UnityGameStarter.Gameplay
+{
+    /// <summary>
+    /// Central gameplay manager that handles the gameplay states tracking and the gameplay loop
+    /// </summary>
+    [RequireComponent(typeof(GameStateMachine))]
+    public class GameManager : Singleton<GameManager>
+    {
+        [SerializeField] private GameplayData data;
+        private GameStateMachine _stateMachine;
+
+        public GameplayData Data => data;
+        public bool IsPaused => _stateMachine.CurrentState.GetType() == typeof(PauseState);
+
+        protected override void Awake()
+        {
+            base.Awake();
+
+            _stateMachine = GetComponent<GameStateMachine>();
+            _stateMachine.SetState<InitialGameState>();
+
+            if (data != null)
+                EventManager.Instance.Publish(new RuntimeScale(data.gameTimeScale));
+        }
+
+        protected override void OnApplicationQuit()
+        {
+            LeaveGame();
+            base.OnApplicationQuit();
+        }
+
+        /*public void SaveGame() 
+        {
+            // TODO: Save the game by using Save Manager
+        }*/
+        
+        public void LoadGame() 
+        {
+            _stateMachine.SetState<LoadingState>();
+        }
+
+        public void PauseGame() 
+        {
+            _stateMachine.SetState<PauseState>();
+        }
+
+        public void EnterGame() 
+        {
+            _stateMachine.SetState<GameplayState>();
+        }
+
+        public void NextLevel(Scene newLevel)
+        {
+            _stateMachine.reason = ExitGameReason.OpenNewLevel;
+            _stateMachine.nextTargetScene = newLevel;
+            _stateMachine.SetState<ExitGameState>();
+        }
+
+        public void NextLevel(string levelName)
+            => NextLevel(SceneFacade.Instance.GetSceneByName(levelName));
+
+        public void RestartGame() 
+        {
+            _stateMachine.reason = ExitGameReason.Restart;
+            _stateMachine.SetState<ExitGameState>();
+        }
+
+        public void LeaveGame() 
+        {
+            _stateMachine.reason = ExitGameReason.Exit;
+            _stateMachine.SetState<ExitGameState>();
+        }
+    }
+}

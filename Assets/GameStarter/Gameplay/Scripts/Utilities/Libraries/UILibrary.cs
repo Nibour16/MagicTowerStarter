@@ -1,0 +1,37 @@
+using UnityEngine;
+
+namespace UnityGameStarter.UI 
+{
+    public static class UILibrary
+    {
+        public static bool IsCanvasRoot(this RectTransform rect)
+            => rect.TryGetComponent<Canvas>(out _);
+
+        public static bool IsUI(this RectTransform rect)
+            => rect.GetComponentInParent<Canvas>() != null;
+
+        public static bool IsCanvasChild(this RectTransform rect)
+            => rect.GetComponentInParent<Canvas>() != null && !rect.TryGetComponent<Canvas>(out _);
+
+        public static bool IsTopLevelUI(this RectTransform rect)
+            => rect.parent == null || rect.parent.GetComponentInParent<RectTransform>() == null;
+
+        public static bool IsWorldSpaceUI(this RectTransform rect)
+        {
+            Canvas canvas = rect.GetComponentInParent<Canvas>();
+
+            return (canvas != null && canvas.renderMode == RenderMode.WorldSpace);
+        }
+
+        public static void Normalize(this RectTransform rect)
+        {
+            rect.anchorMin = Vector2.zero;
+            rect.anchorMax = Vector2.one;
+
+            rect.offsetMin = Vector2.zero;
+            rect.offsetMax = Vector2.zero;
+
+            rect.localScale = Vector3.one;
+        }
+    }
+}

@@ -1,0 +1,10 @@
+namespace UnityGameStarter.EditorUtilities.Creator.StateMachine
+{
+    public class StateCreatorWindow : ScriptCreatorWindow<StateScriptCreator>
+    {
+        protected override string Title => "State Creator";
+        protected override string FilesLabel => "State Name";
+
+        protected override ContentDefinition Files => new() { value = "NewState" };
+    }
+}
