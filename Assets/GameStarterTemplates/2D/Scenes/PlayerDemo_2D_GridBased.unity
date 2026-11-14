@@ -3179,7 +3179,7 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 27557734433ccd6499b1eee360e4b3fc, type: 3}
---- !u!1001 &938863287
+--- !u!1001 &1610588392
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -3187,59 +3187,47 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 720684324810919035, guid: 08937a9194151ed4485db31923ae3cd2, type: 3}
-      propertyPath: gameplayUIRoot
-      value: 
-      objectReference: {fileID: 2066462759}
-    - target: {fileID: 4373007160778346180, guid: 08937a9194151ed4485db31923ae3cd2, type: 3}
-      propertyPath: gridManager
-      value: 
-      objectReference: {fileID: 2042453181}
-    - target: {fileID: 4373007160778346180, guid: 08937a9194151ed4485db31923ae3cd2, type: 3}
-      propertyPath: releaseCurrentCellOnMovingStart
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4877215146579372781, guid: 08937a9194151ed4485db31923ae3cd2, type: 3}
+    - target: {fileID: 4877215146579372781, guid: 80c603612d159fc418d97936ce23d3eb, type: 3}
       propertyPath: m_Name
       value: GridBasedPlayer2D
       objectReference: {fileID: 0}
-    - target: {fileID: 7979293185829589836, guid: 08937a9194151ed4485db31923ae3cd2, type: 3}
+    - target: {fileID: 7979293185829589836, guid: 80c603612d159fc418d97936ce23d3eb, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.1904674
+      value: -4.1149287
       objectReference: {fileID: 0}
-    - target: {fileID: 7979293185829589836, guid: 08937a9194151ed4485db31923ae3cd2, type: 3}
+    - target: {fileID: 7979293185829589836, guid: 80c603612d159fc418d97936ce23d3eb, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.43205166
+      value: 0.4581786
       objectReference: {fileID: 0}
-    - target: {fileID: 7979293185829589836, guid: 08937a9194151ed4485db31923ae3cd2, type: 3}
+    - target: {fileID: 7979293185829589836, guid: 80c603612d159fc418d97936ce23d3eb, type: 3}
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7979293185829589836, guid: 08937a9194151ed4485db31923ae3cd2, type: 3}
+    - target: {fileID: 7979293185829589836, guid: 80c603612d159fc418d97936ce23d3eb, type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 7979293185829589836, guid: 08937a9194151ed4485db31923ae3cd2, type: 3}
+    - target: {fileID: 7979293185829589836, guid: 80c603612d159fc418d97936ce23d3eb, type: 3}
       propertyPath: m_LocalRotation.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7979293185829589836, guid: 08937a9194151ed4485db31923ae3cd2, type: 3}
+    - target: {fileID: 7979293185829589836, guid: 80c603612d159fc418d97936ce23d3eb, type: 3}
       propertyPath: m_LocalRotation.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7979293185829589836, guid: 08937a9194151ed4485db31923ae3cd2, type: 3}
+    - target: {fileID: 7979293185829589836, guid: 80c603612d159fc418d97936ce23d3eb, type: 3}
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7979293185829589836, guid: 08937a9194151ed4485db31923ae3cd2, type: 3}
+    - target: {fileID: 7979293185829589836, guid: 80c603612d159fc418d97936ce23d3eb, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7979293185829589836, guid: 08937a9194151ed4485db31923ae3cd2, type: 3}
+    - target: {fileID: 7979293185829589836, guid: 80c603612d159fc418d97936ce23d3eb, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7979293185829589836, guid: 08937a9194151ed4485db31923ae3cd2, type: 3}
+    - target: {fileID: 7979293185829589836, guid: 80c603612d159fc418d97936ce23d3eb, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
@@ -3247,7 +3235,7 @@ PrefabInstance:
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 08937a9194151ed4485db31923ae3cd2, type: 3}
+  m_SourcePrefab: {fileID: 100100000, guid: 80c603612d159fc418d97936ce23d3eb, type: 3}
 --- !u!1001 &1738744671
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3636,28 +3624,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 4305284923804959381, guid: 20799409c4b3e224c9867d36c0806d84, type: 3}
   m_PrefabInstance: {fileID: 1912744051}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &2042453181 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: -3600816137957714478, guid: 48320f8f536c5e34c88faa3a010e7ae1, type: 3}
-  m_PrefabInstance: {fileID: 1883297128}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8a6d9a7be5213ae46a150e0ea5c4a72b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::UnityGameStarter.Gameplay.GridSystem.SnappableGridManager
---- !u!114 &2066462759 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 370179354764222696, guid: 6ab2986371ced614785e301f3ecc48be, type: 3}
-  m_PrefabInstance: {fileID: 1738744671}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a09950eb8211c6c489080c2fc9b4a997, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::UnityGameStarter.Gameplay.UI.UIRoot
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -3667,5 +3633,5 @@ SceneRoots:
   - {fileID: 1883297128}
   - {fileID: 1837741212}
   - {fileID: 329947313}
-  - {fileID: 938863287}
+  - {fileID: 1610588392}
   - {fileID: 1738744671}
