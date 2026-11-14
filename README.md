@@ -11,17 +11,17 @@
 
 ## 简介 Introduction
 
-> 这是一个基于由本人制作的UnityGameStarter的Unity魔塔开发框架（也可以说成是样板）。
-> This is a Unity magic tower development framework based on Unity Game Starter made by me.
->
-> 大概几年前曾使用过一个叫Oksh的人用RPG Maker XP做的魔塔样板。综合评价来看呢造一个基本的传统魔塔完全够了，但如果想要制作如大型蓝海塔，新新魔塔战斗等类魔塔机制的话，
-> 用起来还是很麻烦（~~其实用RPG Maker XP做框架本就很难受~~），因此我就打算自己用通用性更高且性能更好的Unity，基于自己先前制作的UnityGameStarter这个通用游戏框架，
-> 来制作这个全新的魔塔开发框架。
-> About a few years ago I used a Magic Tower Layout created by a person named Oksh using RPG Maker XP. The layout was good enough for making classic simple 
-> Magic Tower games, but if you want to adding more cool mechanics and make it cooler, it is still difficult to use (~~honestly also the RPG Maker XP itself~~), 
-> therefore I decide to use Unity which is more common and better performance, to make a new Magic Tower framework based on UnityGameStarter
->
-> 参见 See also: <https://www.wdmota.com/NewModel.html>
+- 这是一个基于由本人制作的UnityGameStarter的Unity魔塔开发框架（也可以说成是样板）。
+  This is a Unity magic tower development framework based on Unity Game Starter made by me.
+
+- 大概几年前曾使用过一个叫Oksh的人用RPG Maker XP做的魔塔样板。综合评价来看呢造一个基本的传统魔塔完全够了，但如果想要制作如大型蓝海塔，新新魔塔战斗等类魔塔机制的话，
+  用起来还是很麻烦（~~其实用RPG Maker XP做框架本就很难受~~），因此我就打算自己用通用性更高且性能更好的Unity，基于自己先前制作的UnityGameStarter这个通用游戏框架，
+  来制作这个全新的魔塔开发框架。
+  About a few years ago I used a Magic Tower Layout created by a person named Oksh using RPG Maker XP. The layout was good enough for making classic simple 
+  Magic Tower games, but if you want to adding more cool mechanics and make it cooler, it is still difficult to use (~~honestly also the RPG Maker XP itself~~), 
+  therefore I decide to use Unity which is more common and better performance, to make a new Magic Tower framework based on UnityGameStarter
+
+- 参见 See also: <https://www.wdmota.com/NewModel.html>
 
 ---
 
