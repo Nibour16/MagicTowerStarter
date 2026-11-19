@@ -1,9 +1,10 @@
 using UnityEngine;
 using UnityGameStarter.Gameplay.GridSystem;
 
-public class Enemy : MonoBehaviour, IGridSnappable
+public class Enemy : MonoBehaviour, IGridCollideEvent
 {
-    // TODO: requires the grid system to offer a grid event interaction interface
-
-    public void OnSnapped(string snappedLayer, Vector3Int gridID, Vector3Int coord) { }
+    public void OnHit(GameObject other)
+    {
+        throw new System.NotImplementedException();
+    }
 }
