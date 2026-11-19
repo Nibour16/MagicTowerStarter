@@ -5,6 +5,6 @@ public class Enemy : MonoBehaviour, IGridCollideEvent
 {
     public void OnHit(GameObject other)
     {
-        throw new System.NotImplementedException();
+        Debug.Log("Hit");
     }
 }
