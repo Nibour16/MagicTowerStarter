@@ -3,7 +3,7 @@ using UnityEngine;
 using UnityGameStarter.DataStructure;
 using UnityMotaStarter.Characters;
 
-public class CharacterStat : MonoBehaviour, ICharacterAttributes
+public class CharacterStat : ScriptableObject, ICharacterAttributes
 {
     [SerializeField] private int hp = 100;
     [SerializeField] private int atk = 10;
