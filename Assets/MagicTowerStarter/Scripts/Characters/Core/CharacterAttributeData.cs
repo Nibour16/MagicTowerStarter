@@ -5,16 +5,19 @@ namespace UnityMotaStarter.Characters
 {
     public class CharacterAttributeData
     {
+        public readonly string characterName;
         private readonly Dictionary<string, float> _attributes = new();
 
-        public CharacterAttributeData(Dictionary<string, float> attributes)
+        public CharacterAttributeData(string attributeName, Dictionary<string, float> attributes)
         {
             if (attributes == null) 
             {
                 Debug.LogError("Input attributes array is not assigned");
                 return;
             }
-            
+
+            characterName = attributeName;
+
             foreach (var attribute in attributes) 
             {
                 if (!_attributes.TryAdd(attribute.Key, attribute.Value))
@@ -29,5 +32,13 @@ namespace UnityMotaStarter.Characters
         }
 
         public float GetAttributeValue(string name) => GetAttributeValue(name, out _);
+
+        public bool SetAttributeValue(string name, float value) 
+        {
+            if (!_attributes.ContainsKey(name)) return false;
+
+            _attributes[name] = value;
+            return true;
+        }   
     }
 }

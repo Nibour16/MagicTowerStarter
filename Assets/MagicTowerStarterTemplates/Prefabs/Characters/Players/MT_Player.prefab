@@ -8,14 +8,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 4373007160778346180, guid: 08937a9194151ed4485db31923ae3cd2, type: 3}
-      propertyPath: gridManager
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 4373007160778346180, guid: 08937a9194151ed4485db31923ae3cd2, type: 3}
-      propertyPath: releaseCurrentCellOnMovingStart
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 4877215146579372781, guid: 80c603612d159fc418d97936ce23d3eb, type: 3}
       propertyPath: m_Name
       value: MT_Player
@@ -60,8 +52,37 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4373007160778346180, guid: 08937a9194151ed4485db31923ae3cd2, type: 3}
+      propertyPath: gridManager
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4373007160778346180, guid: 08937a9194151ed4485db31923ae3cd2, type: 3}
+      propertyPath: releaseCurrentCellOnMovingStart
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4877215146579372781, guid: 80c603612d159fc418d97936ce23d3eb, type: 3}
+      insertIndex: 3
+      addedObject: {fileID: 567614270913293152}
   m_SourcePrefab: {fileID: 100100000, guid: 80c603612d159fc418d97936ce23d3eb, type: 3}
+--- !u!1 &2237359504191483144 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4877215146579372781, guid: 80c603612d159fc418d97936ce23d3eb, type: 3}
+  m_PrefabInstance: {fileID: 6675438319656617957}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &567614270913293152
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2237359504191483144}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a5f1f121ff819b48bd2fc096d9b108d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MotaPlayer
+  stat: {fileID: 11400000, guid: 32af5ddef5ab63b4f81bc908ddcd82c6, type: 2}
