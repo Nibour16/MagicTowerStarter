@@ -11,7 +11,7 @@ PrefabInstance:
     - target: {fileID: -7031656818019940085, guid: 27557734433ccd6499b1eee360e4b3fc, type: 3}
       propertyPath: playerPrefab
       value: 
-      objectReference: {fileID: 2237359504191483144, guid: a02ea8aa8151e624e9024797dd50a92c, type: 3}
+      objectReference: {fileID: 1745550124079463559, guid: c60c061f5ecb74a4dac6506e014a8e70, type: 3}
     - target: {fileID: 972575403632766427, guid: 27557734433ccd6499b1eee360e4b3fc, type: 3}
       propertyPath: m_Name
       value: MT_PlayerSpawner
