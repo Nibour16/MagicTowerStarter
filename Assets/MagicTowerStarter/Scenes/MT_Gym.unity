@@ -304,6 +304,17 @@ MonoBehaviour:
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
   m_Version: 2
+--- !u!114 &1993258718 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1248426525114387919, guid: 9e700c080e97e2a4996fbe85c13d5c39, type: 3}
+  m_PrefabInstance: {fileID: 9202799039790939313}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a6d9a7be5213ae46a150e0ea5c4a72b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UnityGameStarter.Gameplay.GridSystem.SnappableGridManager
 --- !u!1001 &3896509502632140055
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -372,7 +383,7 @@ PrefabInstance:
     - target: {fileID: 6923124576822429985, guid: a02ea8aa8151e624e9024797dd50a92c, type: 3}
       propertyPath: gridManager
       value: 
-      objectReference: {fileID: 9202799039790939314}
+      objectReference: {fileID: 0}
     - target: {fileID: 1745550124079463559, guid: c60c061f5ecb74a4dac6506e014a8e70, type: 3}
       propertyPath: m_Name
       value: MTPlayer
@@ -420,7 +431,7 @@ PrefabInstance:
     - target: {fileID: 7432666807184349358, guid: c60c061f5ecb74a4dac6506e014a8e70, type: 3}
       propertyPath: gridManager
       value: 
-      objectReference: {fileID: 9202799039790939314}
+      objectReference: {fileID: 1993258718}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -597,17 +608,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9e700c080e97e2a4996fbe85c13d5c39, type: 3}
---- !u!114 &9202799039790939314 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1248426525114387919, guid: 9e700c080e97e2a4996fbe85c13d5c39, type: 3}
-  m_PrefabInstance: {fileID: 9202799039790939313}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8a6d9a7be5213ae46a150e0ea5c4a72b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::UnityGameStarter.Gameplay.GridSystem.SnappableGridManager
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

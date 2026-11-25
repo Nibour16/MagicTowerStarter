@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "com.nibour.unity-game-starter": "https://github.com/Nibour16/UnityGameStarter.git?path=/Packages/com.nibour.unity-game-starter",
     "com.unity.ai.navigation": "2.0.13",
     "com.unity.collab-proxy": "2.12.4",
     "com.unity.feature.2d": "2.0.2",
