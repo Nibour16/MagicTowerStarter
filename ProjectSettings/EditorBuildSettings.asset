@@ -12,7 +12,7 @@ EditorBuildSettings:
     path: Assets/GameStarterTemplates/Core/Scenes/MainMenuDemo.unity
     guid: 1d37ec329f8efa94d9bc12e4ffa7f16a
   - enabled: 1
-    path: Assets/MagicTowerStarterTemplates/Scenes/MT_MainMenu.unity
+    path: Assets/MagicTowerStarter/Scenes/MT_MainMenu.unity
     guid: 865ac69b5aee2fb46bbc2eb9b6c38372
   - enabled: 1
     path: Assets/MagicTowerStarter/Scenes/MT_Gym.unity
